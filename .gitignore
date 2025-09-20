@@ -1,0 +1,12 @@
+# Environment variables
+.env
+/backend/temp_uploads/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/

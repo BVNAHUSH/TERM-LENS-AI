@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>T&C Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>T&C Analyzer</h2>
+  
+  <input type="file" id="fileInput" accept=".pdf,.docx,.jpg,.png" />
+  <button id="analyzeBtn">Analyze</button>
+
+  <div id="status"></div>
+
+  <div id="resultSection" style="display: none;">
+    <h3>Summary</h3>
+    <p id="summary"></p>
+    
+    <h3>Confidence Score</h3>
+    <p id="confidence"></p>
+
+    <a id="downloadBtn" href="#" download="analysis_result.txt">Download Result</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

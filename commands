@@ -1,0 +1,17 @@
+step 1:
+```
+C:/Users/nahus/anaconda3/Scripts/activate
+```
+step 2:
+```
+conda activate base
+```
+
+step 3:
+```
+cd backend
+```
+step 4:
+```
+uvicorn main:app --reload
+```

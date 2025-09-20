@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pytesseract
+python-multipart
+pdfplumber
+docx2txt
+Pillow
+google-generativeai
+aiohttp
+beautifulsoup4
+python-dotenv
+textstat

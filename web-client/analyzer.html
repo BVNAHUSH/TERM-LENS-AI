@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TermsGuard AI - TRY OUT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        #funFact {
+            display: none;
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 8px;
+            background-color: #f0f9ff;
+            color: #0c4a6e;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.5;
+            border: 1px solid #e0f2fe;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; transform: translateY(10px); }
+            20%, 80% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../images/logo.gif" alt="Term Lens AI Logo" class="logo-image">
+                <span class="logo-text logo-text-glow">Term Lens AI</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="signin.html" class="btn-secondary" id="signInBtn">Sign In</a>
+                <div id="userProfile" style="display: none; align-items: center; gap: 12px;">
+                    <span id="userName" style="font-weight: 500;"></span>
+                    <div class="logo-icon" style="font-size: 24px;">👤</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Analyzer Section -->
+    <section class="analyzer-section" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="try-out-gradient">TRY OUT</h2>
+                <p>Upload your document and get comprehensive insights in seconds</p>
+            </div>
+
+            <div class="analyzer-card">
+                <div class="analyzer-header">
+                    <div class="security-badge">
+                        <span class="security-icon">🔒</span>
+                        <span>Enterprise-grade security • GDPR compliant</span>
+                    </div>
+                </div>
+
+                <div class="input-methods">
+                    <button id="fileBtn" class="input-method active" data-method="file">
+                        <div class="method-icon">📄</div>
+                        <div class="method-content">
+                            <div class="method-title">Upload Document</div>
+                            <div class="method-subtitle">PDF, DOCX, TXT, Images</div>
+                        </div>
+                    </button>
+                    <button id="textBtn" class="input-method" data-method="text">
+                        <div class="method-icon">✍️</div>
+                        <div class="method-content">
+                            <div class="method-title">Paste Text</div>
+                            <div class="method-subtitle">Copy & paste directly</div>
+                        </div>
+                    </button>
+                    <button id="urlBtn" class="input-method" data-method="url">
+                        <div class="method-icon">🔗</div>
+                        <div class="method-content">
+                            <div class="method-title">Website URL</div>
+                            <div class="method-subtitle">Direct link analysis</div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="input-containers">
+                    <div id="fileInputContainer" class="input-container active">
+                        <div class="upload-zone" id="fileUploadArea">
+                            <div class="upload-content">
+                                <div class="upload-icon">📁</div>
+                                <div class="upload-text">Drop your document here</div>
+                                <div class="upload-subtext">or <span class="upload-link">browse files</span></div>
+                                <div class="upload-formats">Supports PDF, DOCX, TXT, JPG, PNG • Max 20MB</div>
+                            </div>
+                            <input type="file" id="fileInput" accept=".pdf,.docx,.txt,.jpg,.png">
+                        </div>
+                    </div>
+
+                    <div id="textInputContainer" class="input-container">
+                        <div class="text-input-wrapper">
+                            <textarea id="textInput" placeholder="Paste your Terms & Conditions text here..."></textarea>
+                            <div class="input-footer">
+                                <span class="char-count">0 characters</span>
+                                <span class="processing-note">All text is processed securely</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="urlInputContainer" class="input-container">
+                        <div class="url-input-wrapper">
+                            <input type="url" id="urlInput" placeholder="https://example.com/terms-and-conditions">
+                            <div class="url-examples">
+                                <span>Examples:</span>
+                                <button type="button" class="example-url" data-url="https://policies.google.com/terms">Google Terms</button>
+                                <button type="button" class="example-url" data-url="https://www.facebook.com/terms.php">Facebook T&C</button>
+                                <button type="button" class="example-url" data-url="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088">Amazon Terms</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="analyzeBtn" class="btn-analyze">
+                    <span class="btn-content">
+                        <span class="btn-icon">🔍</span>
+                        <span class="btn-text">Analyze Document</span>
+                    </span>
+                    <div class="btn-loader">
+                        <div class="loader-spinner"></div>
+                        <span class="loader-text">Analyzing...</span>
+                    </div>
+                </button>
+
+                <div id="funFact" class="fun-fact"></div>
+                <div id="status" class="status-message"></div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="resultSection" class="results-section">
+                <div class="results-header">
+                    <div class="results-icon">✅</div>
+                    <div class="results-title">Analysis Complete</div>
+                    <div class="results-time" id="analysisTime">Completed in 12.3 seconds</div>
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-card main-result">
+                        <div class="card-header">
+                            <h3>📋 Executive Summary</h3>
+                            <div class="confidence-badge">
+                                <span>Confidence: </span>
+                                <span id="confidence" class="confidence-score">--</span>
+                            </div>
+                        </div>
+                        <div id="summary" class="summary-content">
+                            <div class="loading-placeholder">
+                                <div class="skeleton-line"></div>
+                                <div class="skeleton-line short"></div>
+                                <div class="skeleton-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-card score-card">
+                        <div class="card-header">
+                            <h3>⚖️ Fairness Score</h3>
+                        </div>
+                        <div class="score-display">
+                            <div class="score-circle">
+                                <div class="score-number" id="fairnessScore">--</div>
+                                <div class="score-label">/ 100</div>
+                            </div>
+                            <div class="score-description">
+                                <div class="score-status" id="scoreStatus">Calculating...</div>
+                                <div class="score-note" id="scoreNote">Processing analysis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="downloadBtn" class="btn-download">
+                        <span>📥 Download Report</span>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.gif" alt="Term Lens AI Logo" class="logo-image">
+                    <span class="logo-text">TERMS LENS AI</span>
+                </div>
+                <p class="footer-text">Protecting your rights through intelligent document analysis</p>
+                <div class="footer-links">
+                    <a href="mailto:work.nahush@example.com">Contact</a>
+                    <a href="https://github.com/nahush919" target="_blank">GitHub</a>
+                    <a href="www.linkedin.com/in/b-v-nahush" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('signInBtn').style.display = 'none';
+                const userProfile = document.getElementById('userProfile');
+                userProfile.style.display = 'flex';
+                document.getElementById('userName').textContent = userName;
+            }
+
+            const sections = document.querySelectorAll('.fade-in-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

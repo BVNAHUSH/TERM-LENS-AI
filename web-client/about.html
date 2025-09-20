@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERM LENS AI - About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../images/logo.gif" alt="Term Lens AI Logo" class="logo-image">
+                <span>TERM LENS AI</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="analyzer.html" class="btn-secondary">TRY OUT</a>
+                <a href="signin.html" class="btn-secondary" id="signInBtn">Sign In</a>
+                <div id="userProfile" style="display: none; align-items: center; gap: 12px;">
+                    <span id="userName" style="font-weight: 500;"></span>
+                    <div class="logo-icon" style="font-size: 24px;">👤</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="center-content">
+        <!-- About Section -->
+        <section class="hero fade-in-section about-hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">About Me & This Project</h1>
+                    <p class="hero-subtitle" style="text-align: center; max-width: 800px; margin: 48px auto;">
+                        Hi, this is Nahush. I created this project because I believe everyone has the right to understand what they're agreeing to.
+                        Terms and conditions are often long, confusing, and filled with legal jargon that most people don't have the time or expertise to decipher.
+                        This can lead to people unknowingly giving away their rights, their data, or their money.
+                        <br><br>
+                        This project aims to solve that problem by using AI to analyze these documents and provide a clear, concise summary of the most important points.
+                        It's designed to be a tool for everyone, from the average consumer to the legal professional, to help them make more informed decisions.
+                        My goal is to make the digital world a little more transparent and fair for everyone.
+                        <br><br>
+                        <a href="analyzer.html" class="btn-secondary" style="text-decoration: none;">Explore this project</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.gif" alt="Term Lens AI Logo" class="logo-image">
+                    <span class="logo-text">TERM LENS AI</span>
+                </div>
+                <p class="footer-text">Protecting your rights through intelligent document analysis</p>
+                <div class="footer-links">
+                    <a href="mailto:work.nahushreddy.com">Contact</a>
+                    <a href="https://github.com/nahush919" target="_blank">GitHub</a>
+                    <a href="www.linkedin.com/in/b-v-nahush" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('signInBtn').style.display = 'none';
+                const userProfile = document.getElementById('userProfile');
+                userProfile.style.display = 'flex';
+                document.getElementById('userName').textContent = userName;
+            }
+        });
+    </script>
+</body>
+</html>

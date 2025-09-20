@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "T&C Analyzer",
+  "version": "1.0",
+  "description": "Analyze Terms and Conditions documents for risks and fairness.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon,gif",
+      "48": "icon,gif",
+      "128": "icon,gif"
+    }
+  },
+  "host_permissions": ["http://localhost:5000/*"],
+  "icons": {
+    "16": "icon.gif",
+    "48": "icon.gif",
+    "128": "icon.gif"
+  }
+}

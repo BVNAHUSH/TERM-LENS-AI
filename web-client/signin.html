@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TermsGuard AI - Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div > <img src="../images/logo.gif" alt="Term Lens AI Logo" class="logo-image"></div>
+                <span class="logo-text">TERM LENS AI</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="analyzer.html" class="btn-secondary">TRY OUT</a>
+                <div id="userProfile" style="display: none; align-items: center; gap: 12px;">
+                    <span id="userName" style="font-weight: 500;"></span>
+                    <div class="logo-icon" style="font-size: 24px;">👤</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign In Section -->
+    <section class="analyzer-section" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sign In</h2>
+                <p>Access your account</p>
+            </div>
+
+            <div class="analyzer-card" style="max-width: 500px; margin: 48px auto;">
+                <div id="signInView">
+                    <form id="signInForm">
+                        <div class="input-container" style="display: block; margin-bottom: 24px;">
+                            <label for="email" style="font-weight: 500; display: block; margin-bottom: 8px;">Email Address</label>
+                            <input type="email" id="email" placeholder="you@example.com" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        </div>
+                        <div class="input-container" style="display: block; margin-bottom: 24px;">
+                            <label for="password" style="font-weight: 500; display: block; margin-bottom: 8px;">Password</label>
+                            <input type="password" id="password" placeholder="••••••••" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        </div>
+                        <button type="submit" class="btn-analyze" style="width: 100%;">Sign In</button>
+                    </form>
+                </div>
+                <div id="nameView" style="display: none;">
+                    <div class="section-header" style="margin-bottom: 24px;">
+                        <h3 style="color: var(--success-color);">Sign-in Successful!</h3>
+                        <p>Please enter your name to complete your profile.</p>
+                    </div>
+                    <form id="nameForm">
+                        <div class="input-container" style="display: block; margin-bottom: 24px;">
+                            <label for="name" style="font-weight: 500; display: block; margin-bottom: 8px;">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        </div>
+                        <button type="submit" class="btn-analyze" style="width: 100%;">Save Name</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                     <img src="../images/logo.gif" alt="Term Lens AI Logo" class="logo-image">
+                    <span class="logo-text">Term Lens AI</span>
+                </div>
+                <p class="footer-text">Protecting your rights through intelligent document analysis</p>
+                <div class="footer-links">
+                    <a href="mailto:work.nahush@example.com">Contact</a>
+                    <a href="https://github.com/nahush919" target="_blank">GitHub</a>
+                    <a href="www.linkedin.com/in/b-v-nahush" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('signInForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // This is a mock sign-in. In a real app, you'd verify credentials.
+            document.getElementById('signInView').style.display = 'none';
+            document.getElementById('nameView').style.display = 'block';
+        });
+
+        document.getElementById('nameForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            if (name.trim()) {
+                localStorage.setItem('userName', name.trim());
+                window.location.href = 'index.html';
+            } else {
+                alert('Please enter your name.');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                // If user is already signed in, redirect to home
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
