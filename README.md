@@ -152,9 +152,12 @@ set your api key and then start the project.
 If you have ideas, bug reports, or suggestions, feel free to open an [issue](https://github.com/BVNAHUSH/TERM-LENS-AI/issues) or contact me directly.  
 All code contributions are managed solely by **B.V. Nahush**.
 
-# License
 
-This project is licensed under the All Rights Reserved License.
+## 🔒 License
+
+© 2025 B.V. Nahush. All Rights Reserved.  
+This project is proprietary and owned solely by **B.V. Nahush**.  
+Unauthorized use, modification, or distribution is prohibited.
 
 
 # 📊 Outputs
